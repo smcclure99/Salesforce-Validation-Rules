@@ -1,0 +1,14 @@
+AND (
+OR(Record_Type_Name__c = "Sub-state Region",Record_Type_Name__c = "County", Record_Type_Name__c = "City"), Parent.RecordType.Name <> "State",
+
+AND (
+OR(Record_Type_Name__c = "Sub-state Region",Record_Type_Name__c = "County", Record_Type_Name__c = "City"), Parent.Parent.RecordType.Name <> "State",
+AND (
+OR(Record_Type_Name__c = "Sub-state Region",Record_Type_Name__c = "County", Record_Type_Name__c = "City"), Parent.Parent.Parent.RecordType.Name <> "State",
+AND (
+OR(Record_Type_Name__c = "Sub-state Region",Record_Type_Name__c = "County", Record_Type_Name__c = "City"), Parent.Parent.Parent.Parent.RecordType.Name <> "State",
+AND (
+OR(Record_Type_Name__c = "Sub-state Region",Record_Type_Name__c = "County", Record_Type_Name__c = "City"), Parent.Parent.Parent.Parent.Parent.RecordType.Name <> "State",
+AND (
+OR(Record_Type_Name__c = "Sub-state Region",Record_Type_Name__c = "County", Record_Type_Name__c = "City"), Parent.Parent.Parent.Parent.Parent.Parent.RecordType.Name <> "State")
+)))))
